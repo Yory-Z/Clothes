@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/div6 plus.css">
+	<link rel="stylesheet" type="text/css" href="CSS/div8 plus.css">
+	<link rel="stylesheet" type="text/css" href="CSS/div4.css">
+	<style type="text/css">
+		
+		body {width: 1200px; margin: 40px auto; height: 5800px; background-image: url("Material/background/background 2.png");}
+		#div1 {width: 300px; height: 200px; -border: 1px solid black; float: left; text-align: center; margin-left: 50px; margin-top: -30px;}
+		#div1 p {font-size: 180px; font-style: italic; display: inline; color: gold; text-shadow: 7px 7px 4px black;}
+		#nav {width: 1400px; height: 60px; -border: 1px solid black; right: 20px; position: fixed; top: 0; z-index: 100; background-image: url("Material/navigation image/nav.jpg");}
+		#nav a {text-decoration: none; color: red; font-style: italic; font-weight: bold;}
+		#ul1 {margin-top: 15px; font-size: 25px;}
+		#ul1 li {width: 170px; height: 30px; -border: 1px solid black; margin-right: 25px; float: right; list-style: none; text-align: center;}
+		#ul1 #li3, #ul1 #li2, #ul1 #li1 {width: 90px; letter-spacing: 15px;}
+
+
+
+
+		#div2 {width: 1100px; height: 760px; -border: 1px solid blue; margin-top: 0px; float: left; margin-left: 50px; }
+		#div2_sub1, #div2_sub2,#div2_sub3 {margin: 10px;}
+		#div2_sub1 {width: 800px; height: 470px; -border: 1px solid green; float: left; margin-left: 20px;}
+		#div2_sub2 {width: 200px; height: 730px; -border: 1px solid green; float: left; font-size: 90px; font-weight: bold; margin-left: 30px;}
+		#div2_sub2 p {display: inline; }
+		#div2_sub2 #li1, #div2_sub2 #li2, #div2_sub2 #li3 {margin-left: 20px;}
+		#div2_sub2 #li4, #div2_sub2 #li5, #div2_sub2 #li6 {margin-left: 100px;}
+		#div2_sub3 {width: 800px; height: 240px; font-size: 20px; -border: 1px solid red; position: absolute; top: 710px; margin-left: 20px;}
+		#div2_sub3 span {margin-left: 35px;}
+		#div2_sub3 a {text-decoration: none; color: gold; font-weight: bold; font-style: italic;}
+
+
+
+
+		#div3 {width: 1100px; height: 75px; margin-top: 50px; float: left;  margin-left: 50px;background-image: url("Material/background/bird.png");}
+
+
+
+		#div4_title {width: 1100px; height: 120px; margin-top: 100px; margin-left: 50px; float: left; -border: 1px solid gold;}
+		#div4_title #img1 {display: block; float: left;}
+		#div4_title #img2 {display: block; float: right;}
+		#div4_title p {float: left; margin: 10px; margin-left: 20px; font-size: 80px;}
+		#div4_title #p1 {margin-left: 100px;}
+
+
+		#div4_plus {width: 1100px; height: 0px; -border: 1px solid green; float: left; margin-top: 20px; margin-left: 50px; overflow: hidden;}
+		#div4_plus #div4_close_info {width: 90px; height: 30px; -border: 1px solid black; margin-right: 50px; font-size: 25px; color: gold; letter-spacing: 20px; float: right; cursor: pointer;}
+		#div4_sub1 {width: 1080px; height: 1050px; -border: 1px solid gold; float: left; margin: 10px;}
+		#ul2 {list-style: none; padding: 0px; float: left;}
+		#ul2 li {width: 220px; height: 490px; margin: 14px; -border: 1px solid DarkCyan; float: left;}
+		#ul2 li p {width: 220px; height: 185px; -border: 1px solid black; margin-top: 0; text-align: center; font-size: 20px; font-weight: bold;}
+		#ul2 li img {-border: 1px solid gold; display: block; margin-left: 40px;}
+		#ul2 #li4 img {margin-left: 50px;}
+		#ul2 #li5 img {margin-left: 15px;}
+		#ul2 #li5 img {margin-left: 25px;}
+		#ul2 #li1, #ul2 #li5 {margin-left: 50px;}
+		#ul2 #li5, #ul2 #li6, #ul2 #li7, #ul2 #li8 {margin-top: 0px;} 
+		#div4 #div4_more_info {width: 100px; height: 30px; -border: 2px solid gold; margin-left: 900px; margin-top: 20px; font-size: 25px; color: gold; cursor: pointer; float: left;}
+
+
+
+
+		#div5_decoration img {width: 1100px; height: 100px; -border: 1px solid gold; margin-top: 100px; margin-left: 50px;}
+
+
+
+
+		#div5 {width: 1100px; height: 140px; -border: 1px solid black; margin-top: 100px; float: left; text-align: center;  margin-left: 50px;}		
+		#div5_sub1 {margin-top: 30px;}
+		#div5_sub1 p {font-size: 65px; font-style: italic; font-weight: bold; margin: 5px; color: black; float: left;}
+
+
+		
+
+		#div6 {width: 1100px; height: 920px; -border: 1px solid red; margin-top: 20px; float: left;  margin-left: 50px; overflow: hidden;}
+		#div6 img {float: left; padding: 10px;}
+		#div6 #div6_sub1, #div6 #div6_sub2, #div6 #div6_sub3, #div6 #div6_sub4, #div6 #div6_sub5, #div6 #div6_sub6, #div6 #div6_sub7 {width: 240px; height: 240px; -border: 1px solid green; float: left; margin: 20px; border-radius: 50%; overflow: hidden;}
+		#div6 #div6_sub1, #div6 #div6_sub2, #div6 #div6_sub3, #div6 #div6_sub4 {margin-left: 10px;}
+		#div6 #div6_sub1 {margin-left: 25px;}
+		#div6 #div6_sub5 {margin-left: 120px;}
+		#div6 #div6_sub6 {margin-left: 50px;}
+		#div6 #div6_sub7 {margin-left: 50px;}
+		#div6 div img {width: 240px; height: 268.8px; margin-top: -30px; margin-left: -10px; opacity: 0.4; filter: alpha(opacity: 40);}
+		#div6 #text1, #div6 #text2, #div6 #text3, #div6 #text4, #div6 #text5, #div6 #text6, #div6 #text7 {width: 1000px; height: 255px; font-size: 18px; -border: 1px solid black; margin-left: 50px; margin-top: 20px; float: left; display: none;}
+		#div6 #text1 {display: block;}
+		#div6 p b {font-size: 30px;}
+		#div6 p span {margin-left: 35px;}
+		#div6 #div6_more_info {width: 100px; -border: 1px solid gold; margin-left: 950px; margin-top: 15px; float: left; font-size: 25px; color: gold; -font-weight: bold; cursor: pointer;}
+		#div6_plus #div6_close_info {width: 90px; margin-left: 900px; -border: 1px solid blue; font-size: 25px; color: gold; float: left; cursor: pointer; letter-spacing: 20px;}
+
+		
+
+
+
+
+
+		#div7 {width: 1100px; height: 580px; -border: 1px solid orange; float: left; margin-top: 100px;  margin-left: 50px; overflow: hidden;}
+		#div7_sub1 {width: 200px; height: 560px; -border: 1px solid black; margin: 10px; float: left;}
+		#div7_sub1 span {font-size: 120px; font-style: italic; display: block; width: 90px; text-align: center; margin-top: 0px; margin-left: 20px;}
+		#div7_sub1 img {width: 200px;}
+		#div7_sub1 #img2 {display: block; margin-top: 15px;}
+		#div7_sub2 {width: 800px; height: 320px; -border: 1px solid grey; float: left; margin-left: 40px; margin-top: 50px; position: relative; overflow: hidden; }
+		#div7_sub2 ul { position: absolute; left: 0; top: 0; margin: 0; padding: 0; overflow: hidden;}
+		#div7_sub2 ul img {width: 200px; height: 320px;}
+		#div7_sub2 ul li {float: left; width: 200px; height: 320px; list-style: none;}
+		#div7_sub2 .mark_left {width: 200px; height: 320px; position: absolute; left: 0; top: 0; background: blue; filter: alpha(opacity: 0); opacity: 0; z-index: 50;}
+		#div7_sub2 .mark_right {width: 200px; height: 320px; position: absolute; right: 0; top: 0; background: blue; filter: alpha(opacity: 0); opacity: 0; z-index: 50;}
+		#div7_sub2 .prev {width: 142px; height: 100px; background: url("Material/Marry/left.png") no-repeat; position: absolute; top: 110px; left: 10px; z-index: 51; filter: alpha(opacity: 0); opacity: 0; cursor: pointer;}
+		#div7_sub2 .next {width: 142px; height: 100px; background: url("Material/Marry/right.png") no-repeat; position: absolute; top: 110px; right: 10px; z-index: 51; filter: alpha(opacity: 0); opacity: 0; cursor: pointer;}
+		#div7 p {width: 800px; height: 160px; font-size: 20px; -border: 1px solid green; float: left; margin-left: 40px; margin-top: 40px;}
+		#div7 p span {margin-left: 35px;}
+
+
+
+
+
+
+		#div8 {width: 1100px; height: 850px; -border: 1px solid yellow; float: left; margin-top: 100px;  margin-left: 50px;}
+		#div8_sub1 {width: 900px; height: 770px; -border: 1px solid grey; float: left; margin: 10px;}
+		#div8_sub2 {width: 150px; height: 770px; -border: 1px solid black; margin: 10px; float: right;}
+		#div8_sub2 span {display: block; font-size: 140px; font-style: italic; width: 90px; text-align: center;}
+		#div8_sub2 img {display: block;}
+		#div8_sub2 #span1 {margin-top: 60px; margin-bottom: 50px;}
+		#div8_sub2 #span2 {margin-top: 50px;}
+		#div8_sub1 #div8_ssub1 {width: 330px; height: 330px; margin-left: 200px; margin-top: 30px; background-image: url("Material/headwear/p1.jpg"); float: left;}
+		#div8_sub1 #div8_ssub1Plus {width: 250px; height: 250px; margin-left: 50px; margin-top: 110px; background-image: url("Material/headwear/h1.jpg"); float: left;}
+		#div8_sub1 #div8_ssub2 {width: 880px; height: 110px; margin-left: -30px; float: left;}
+		#div8_sub1 #div8_ssub2 ul {width: 880px; height: 110px; list-style: none; -border: 1px solid blue;}
+		#div8_sub1 #div8_ssub2 ul li {float: left;}
+		#div8_sub1 #div8_ssub2 img {width: 110px; height: 110px; opacity: 0.5; filter: alpha(opacity: 50);}
+		#div8_sub1 #ol1 {width: 500px; height: 50px; -border: 1px solid red; list-style: none; margin-left: 180px; margin-top: 30px; float: left;}
+		#div8_sub1 #ol1 li {width: 35px; height: 35px; -border: 1px solid black; float: left; margin-left: 20px; margin-top: 10px; text-align: center; font-size: 30px; background-color: red;}
+		#div8_sub1 #ol1 .active {background-color: gold;}
+
+		#div8_sub1 #div8_ssub2Plus {width: 880px; height: 110px; margin-left: -30px; float: left; margin-top: 10px;}
+		#div8_sub1 #div8_ssub2Plus ul {width: 880px; height: 110px; list-style: none; -border: 1px solid blue;}
+		#div8_sub1 #div8_ssub2Plus ul li {float: left;}
+		#div8_sub1 #div8_ssub2Plus img {width: 110px; height: 110px; opacity: 0.5; filter: alpha(opacity: 50);}
+		#div8_sub1 #ol2 {width: 500px; height: 50px; -border: 1px solid red; list-style: none; margin-left: 180px; margin-top: 30px; float: left;}
+		#div8_sub1 #ol2 li {width: 35px; height: 35px; -border: 1px solid black; float: left; margin-left: 20px; margin-top: 10px; text-align: center; font-size: 30px; background-color: red;}
+		#div8_sub1 #ol2 .active {background-color: gold;}
+		#div8 #div8_more_info {width: 100px; -border: 1px solid gold; margin-left: 950px; margin-top: 15px; float: left; font-size: 25px; color: gold; -font-weight: bold; cursor: pointer; cursor: pointer;}
+		#div8_plus #div8_close_info {width: 90px; margin-left: 250px; cursor: pointer; -border: 1px solid black; float: left; font-size: 25px; margin-left: 900px; margin-top: 20px; color: gold; -font-weight: bold; letter-spacing: 20px;}
+
+
+
+
+
+
+		#div9 {width: 1100px; height: 400px; -border: 1px solid yellow; float: left; margin-top: 100px;  margin-left: 50px;}
+		#div9_sub1 {width: 150px; height: 320px; -border: 1px solid black; margin: 10px; float: left;}
+		#div9_sub1 p {float: left; font-size: 50px; font-weight: bold; margin: 0px;}
+		#div9_sub1 #p1, #div9_sub1 #p2 {margin-left: 10px; margin-top: 20px;}
+		#div9_sub1 #p3, #div9_sub1 #p4 {margin-left: 15px; margin-top: 20px;}
+		#div9_sub1 #p5, #div9_sub1 #p6 {margin-left: 15px; margin-top: 20px;}
+		#div9_sub2 {width: 900px; height: 340px; -border: 1px solid grey; float: left; margin-left: 10px; margin-top: 10px; overflow: hidden;}
+		#div9_sub2 ul {width: 900px; height: 340px; display: none; -border: 1px solid gold; display: none; list-style: none; margin-top: 0px;}
+		#div9_sub2 ul li {float: left; margin-left: 10px;}
+		#div9_sub2 ul li #img1 {margin-left: -30px;}
+		#div9_sub2 ul li p {height: 30px; width: 200px; -border: 1px solid green; margin-left: -30px; margin-top: 0px; font-size: 25px; font-weight: bold; text-align: center;}
+		#div9_sub2 #nation1 {display: block;}
+		#div9 #div9_more_info {width: 100px; -border: 1px solid gold; margin-left: 950px; margin-top: 15px; float: left; font-size: 25px; color: gold; -font-weight: bold; cursor: pointer;}
+
+		#div9_plus {width: 1100px; height: 0px; -border: 1px solid green; float: left; margin-top: 10px; margin-left: 50px; overflow: hidden;}
+		#div9_plus ul {margin-left: 50px;}
+		#div9_plus ul li {width: 900px; height: 200px; -border: 1px solid gold; list-style: none; margin-top: 20px;}
+		#div9_plus ul li img {display: block; height: 200px;}
+		#div9_plus ul li p {width: 700px; height: 180px; margin-left: 30px; margin-top: 10px; -border: 1px solid green; float: left; font-size: 20px; overflow: hidden;}
+		#div9_plus #div9_plus_ul1 {display: block;}
+		#div9_plus #div9_plus_ul2, #div9_plus #div9_plus_ul3, #div9_plus #div9_plus_ul4, #div9_plus #div9_plus_ul5, #div9_plus #div9_plus_ul6 {display: none;}
+
+		#div9_plus #div9_first_page, #div9_plus #div9_last_page, #div9_plus #div9_next_page, #div9_plus #div9_end_page, #div9_plus #div9_close_info {width: 100px; -border: 1px solid black; float: left; font-size: 25px; margin-left: 300px; margin-top: 20px; color: gold; -font-weight: bold;}
+		#div9_plus #div9_first_page {width: 50px; margin-left: 350px; cursor: pointer;}
+		#div9_plus #div9_last_page {width: 80px; margin-left: 20px; cursor: pointer;}
+		#div9_plus #div9_next_page {width: 80px; margin-left: 20px; cursor: pointer;}
+		#div9_plus #div9_end_page {width: 50px; margin-left: 20px; cursor: pointer;}
+		#div9_plus #div9_close_info {width: 50px; margin-left: 250px; cursor: pointer;}
+
+
+
+		#copyright {width: 1100px; height: 30px; -border: 1px solid black; margin-top: 180px; margin-left: 50px; float: left; text-align: center; font-size: 20px;}
+		
+	</style>
+	<script src="JS/perfectly move.js"></script>
+	<script src="JS/move L & R.js"></script>
+	<script src="JS/change pages 56 nation.js"></script>
+	<script src="JS/dvi6 and div8 plus.js"></script>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			//change navigation's colour
+			var oUl1=document.getElementById('ul1');
+			var oLiNav=oUl1.getElementsByTagName('li');
+			var former=null;
+			for(var i=0;i<oLiNav.length;i++)
+			{
+
+				oLiNav[i].onclick=function()
+				{
+
+					for(var i=0;i<oLiNav.length;i++)
+					{
+						oLiNav[i].getElementsByTagName('a')[0].style.color = 'red';
+					}
+					//console.log(this.getElementsByTagName('a')[0]);
+					this.getElementsByTagName('a')[0].style.color = 'gold';
+					former = this;
+				}
+
+				oLiNav[i].onmouseover=function()
+				{
+
+					for(var i=0;i<oLiNav.length;i++)
+					{
+						if(oLiNav[i]==former)
+							continue;
+						oLiNav[i].getElementsByTagName('a')[0].style.color = 'red';
+					}
+					this.getElementsByTagName('a')[0].style.color = 'gold';
+				}
+
+				oLiNav[i].onmouseout=function()
+				{
+
+					for(var i=0;i<oLiNav.length;i++)
+					{
+						if(oLiNav[i]==former)
+							continue;
+						oLiNav[i].getElementsByTagName('a')[0].style.color = 'red';
+					}
+				}
+			}
+
+
+
+			//change the video
+			var Div2_video=document.getElementById('div2').getElementsByTagName('div')[0].getElementsByTagName('video')[0];
+			var a_video=document.getElementById('div2').getElementsByTagName('div')[2].getElementsByTagName('a');
+			for(var i=0;i<a_video.length;i++)
+			{
+				a_video[i].onclick=function()
+				{
+					Div2_video.src='Material/video/cloth of China '+i+'.mp4';
+				}
+			}
+
+
+
+			var Div4=document.getElementById('div4');
+			var oDiv4_Plus=document.getElementById('div4_plus');
+			var Div4_More=document.getElementById('div4_more_info');
+			var Div4_Close=document.getElementById('div4_close_info');
+			Div4_More.onclick=function()
+			{
+				startMove(oDiv4_Plus,{height: 1150});
+			}
+			Div4_Close.onclick=function()
+			{
+				startMove(oDiv4_Plus,{height: 0});
+			}
+
+			var Div4_Content=Div4.getElementsByTagName('div');
+			var Div4_Nav=Div4.getElementsByTagName('ol')[0].getElementsByTagName('li');
+			for(var i=0;i<Div4_Nav.length;i++)
+			{
+				Div4_Nav[i].index=i;
+				Div4_Nav[i].onclick=function()
+				{
+					for(var j=0;j<Div4_Content.length;j++)
+					{
+						Div4_Content[j].style.display='none';
+					}
+					Div4_Content[this.index].style.display='block';
+				}
+
+			}
+
+
+
+			//controls headwear's style
+			var oDiv8=document.getElementById('div8_sub1');
+			var BigImg=oDiv8.getElementsByTagName('div')[0];
+			var oLinum=oDiv8.getElementsByTagName('ol')[0].getElementsByTagName('li');
+			var oLiImg=oDiv8.getElementsByTagName('div')[2].getElementsByTagName('ul')[0].getElementsByTagName('li');
+
+			var BigImgPlus=oDiv8.getElementsByTagName('div')[1];
+			var oLinumPlus=oDiv8.getElementsByTagName('ol')[1].getElementsByTagName('li');
+			var oLiImgPlus=oDiv8.getElementsByTagName('div')[3].getElementsByTagName('ul')[0].getElementsByTagName('li');
+
+			for(var i=0;i<oLinum.length;i++)
+			{
+				var IMG=oLiImg[i].getElementsByTagName('img')[0];
+				IMG.alpha = 50;
+				oLinum[i].index = i+1;
+				IMG.index = i+1;
+
+				var IMGPlus=oLiImgPlus[i].getElementsByTagName('img')[0];
+				IMGPlus.alpha = 50;
+				oLinumPlus[i].index = i+1;
+				IMGPlus.index = i+1;
+
+				oLinum[i].onmouseover=function()
+				{
+					for(var j=0;j<oLinum.length;j++)
+					{
+						 oLinum[j].style.backgroundColor = 'red';
+						 startMove(oLiImg[j].getElementsByTagName('img')[0],{opacity: 50});
+					}
+					this.style.backgroundColor = 'gold';
+					BigImg.style.backgroundImage = 'url(Material/headwear/p'+this.index+'.jpg)';
+					startMove(oLiImg[this.index-1].getElementsByTagName('img')[0], {opacity: 100});
+				}
+				oLinumPlus[i].onmouseover=function()
+				{
+					for(var j=0;j<oLinum.length;j++)
+					{
+						 oLinumPlus[j].style.backgroundColor = 'red';
+						 startMove(oLiImgPlus[j].getElementsByTagName('img')[0],{opacity: 50});
+					}
+					this.style.backgroundColor = 'gold';
+					BigImgPlus.style.backgroundImage = 'url(Material/headwear/h'+this.index+'.jpg)';
+					startMove(oLiImgPlus[this.index-1].getElementsByTagName('img')[0],{opacity: 100});
+
+				}
+
+				IMG.onmouseover=function()
+				{
+					for(var j=0;j<oLinum.length;j++)
+					{
+						oLinum[j].style.backgroundColor = 'red';
+						startMove(oLiImg[j].getElementsByTagName('img')[0],{opacity: 50});
+					}
+					startMove(this, {opacity: 100});
+					oLinum[this.index-1].style.backgroundColor = 'gold';
+					BigImg.style.backgroundImage = 'url(Material/headwear/p'+this.index+'.jpg)';
+				}
+				IMGPlus.onmouseover=function()
+				{
+					for(var j=0;j<oLinum.length;j++)
+					{
+						oLinumPlus[j].style.backgroundColor = 'red';
+						startMove(oLiImgPlus[j].getElementsByTagName('img')[0], {opacity: 50});
+					}
+					startMove(this,{opacity: 100});
+					oLinumPlus[this.index-1].style.backgroundColor = 'gold';
+					BigImgPlus.style.backgroundImage = 'url(Material/headwear/h'+this.index+'.jpg)';
+
+				}
+			}
+			
+			changePages('div8_more_info','div8_close_info','div8_plus',1050);
+
+
+
+
+			//wedding dress rolling effect
+			var oDiv7=document.getElementById('div7_sub2');
+			var oUl_Div7=oDiv7.getElementsByTagName('ul')[0];
+			var aLi=oUl_Div7.getElementsByTagName('li');
+			oUl_Div7.innerHTML=oUl_Div7.innerHTML+oUl_Div7.innerHTML;
+			oUl_Div7.style.width=aLi[0].offsetWidth*aLi.length+'px';
+			var two=-2;
+			function move()
+			{
+				if(oUl_Div7.offsetLeft<-oUl_Div7.offsetWidth/2)
+				{
+					oUl_Div7.style.left='0';
+				}
+				if(oUl_Div7.offsetLeft>0)
+				{
+					oUl_Div7.style.left=-oUl_Div7.offsetWidth/2+'px';
+				}
+				oUl_Div7.style.left=oUl_Div7.offsetLeft+two+'px';
+			}
+			oUl_Div7.timer=setInterval(move,30);
+			oUl_Div7.onmouseover=function()
+			{
+				clearInterval(oUl_Div7.timer);
+			}
+			oUl_Div7.onmouseout=function()
+			{
+				oUl_Div7.timer=setInterval(move,30);
+			}
+			//change diretion
+			var oBtnPrev=getByClass(oDiv7, 'prev')[0];
+			var oBtnNext=getByClass(oDiv7, 'next')[0];
+			var oMarkLeft=getByClass(oDiv7, 'mark_left')[0];
+			var oMarkRight=getByClass(oDiv7, 'mark_right')[0];
+			
+			oBtnPrev.onmouseover=oMarkLeft.onmouseover=function()
+			{
+				startMove(oBtnPrev, {opacity: 100});
+			}
+			oBtnNext.onmouseover=oMarkRight.onmouseover=function()
+			{
+				startMove(oBtnNext, {opacity: 100});
+			}
+			oBtnPrev.onmouseout=oMarkLeft.onmouseout=function()
+			{
+				startMove(oBtnPrev, {opacity: 0});
+
+			}
+			oBtnNext.onmouseout=oMarkRight.onmouseout=function()
+			{
+				startMove(oBtnNext, {opacity: 0});
+			}
+			oBtnPrev.onclick=function()
+			{
+				two=-2;
+			}
+			oBtnNext.onclick=function()
+			{
+				two=2;
+			}
+
+
+
+			//traditional technology's opacity change and pictures become larger
+			var Div6=document.getElementById('div6');
+			var tegy=Div6.getElementsByTagName('div');
+			var oTxt=Div6.getElementsByTagName('p');
+			for(var i=0;i<tegy.length;i++)
+			{
+				var tegyImg = tegy[i].getElementsByTagName('img')[0];
+				tegyImg.alpha = 30;
+				tegy[i].index = i;
+				tegyImg.onmouseover=function()
+				{
+					this.parentNode.style.borderRadius = 0;
+					for(var i=0;i<oTxt.length-1;i++)
+					{
+						oTxt[i].style.display = 'none';
+						startMove(tegy[i].getElementsByTagName('img')[0],{opacity: 40});
+					}
+					oTxt[this.parentNode.index].style.display = 'block';
+					startMove(this,{opacity: 100});
+				}
+				tegyImg.onmouseout=function()
+				{
+					this.parentNode.style.borderRadius = '50%';
+				}
+			}
+
+			changePages('div6_more_info','div6_close_info','div6_plus',1050);
+
+
+
+
+			
+			//56 nation showed one by one
+			var Div9=document.getElementById('div9');
+			var oUl_Div9=Div9.getElementsByTagName('ul');
+
+			var j=1;
+			function show()
+			{
+				if(j!=0)
+					oUl_Div9[j-1].style.display = 'none';
+				else
+				{
+					oUl_Div9[5].style.display = 'none';
+				}
+		
+				oUl_Div9[j].style.display='block';
+
+				j++;
+
+				if(j==oUl_Div9.length)
+				{
+					j = 0;
+				}
+			}	
+
+			var timer=setInterval(show, 2000);		
+
+			for(var i=0;i<oUl_Div9.length;i++)
+			{
+				oUl_Div9[i].onmouseover=function()
+				{
+					clearInterval(timer);
+				}
+				oUl_Div9[i].onmouseout=function()
+				{
+					timer=setInterval(show,2000);
+				}
+			}
+			//learn more information and close more information
+			changePage('div9_first_page','div9_last_page','div9_next_page','div9_end_page','div9_more_info','div9_close_info','div9_plus','ul', 980);
+
+		}
+	</script>
+	
+</head>
+<body>
+
+<div id="div1">
+	<a name="Top" id="Top"></a><!--首页-->
+	<p>裳</p>
+</div>
+<div id="nav">
+	<ul id="ul1">
+		<li><a href="#nation">56个民族服装</a></li>
+		<li id="li2"><a href="#headwear">头饰</a></li>
+		<li id="li3"><a href="#marry">嫁衣</a></li>
+		<li><a href="#technology">传统服装工艺</a></li>
+		<li><a href="#China">中国传统服饰</a></li>
+		<li id="li1"><a href="#Top">首页</a></li>	
+	</ul>	
+</div>
+<div id="div2">
+	<div id="div2_sub1">
+		<video autoplay controls loop width="800" height="480"
+		 src="Material/video/cloth of China 1.mp4"
+		 poster="Material/video/1.png" 
+		 >			
+		</video>
+	</div>
+	<div id="div2_sub2">
+		<p id="li1">服</p>
+		<p id="li2">装</p>
+		<p id="li3">里</p>
+		<p id="li4">的</p>
+		<p id="li5">中</p>
+		<p id="li6">国</p>
+	</div>
+	<div id="div2_sub3">
+		<span></span>大型系列纪录片<a href="http://www.iqiyi.com/a_19rrhb9vvl.html?vfm=2008_aldbd" target="_blank">《服装里的中国》</a>由上海影达文化传媒股份有限公司制作，联合央视纪录片平台播出。该项目分为《衣人帮》和《服装里的中国》两大系列。分别从当下独立设计师的现状和中国服装文化的传承两个角度阐述，旨在发掘更多优秀原创服装设计，通过“服装文化”展现中国人的生活。<br><br>
+		<a href="Material/video/cloth of China 1.mp4" target="_blank">第一集<span></span>返璞归真<span></span>夏布</a><br>
+		<a href="Material/video/cloth of China 2.mp4" target="_blank">第二集<span></span>你所不知道的“绩纱”</a><br>
+		<a href="Material/video/cloth of China 3.mp4" target="_blank">第三集<span></span>你所不知道的“穿筘”</a><br>
+		<a href="Material/video/cloth of China 4.mp4" target="_blank">第四集<span></span>你所不知道的“上浆”</a>
+	</div>
+</div>
+<div id="div3"></div>
+
+<div id="div4_title">
+	<img id="img1" src="Material/background/decoration 1.png">
+	<p id="p1">中</p><p>国</p><p>传</p><p>统</p><p>款</p><p>式</p>
+	<img id="img2" src="Material/background/decoration 1.png">
+</div>
+
+<div id="div4">
+	<a name="China" id="China"></a><!--中国传统服饰-->
+	<ol id="div4_nav">
+		<li>秦朝</li>
+		<li>汉朝</li>
+		<li id="li3">魏晋南北朝</li>
+		<li>唐朝</li>
+		<li>宋朝</li>
+		<li>元朝</li>
+		<li>明朝</li>
+		<li>清朝</li>
+	</ol>
+	<div id="div4_content_1">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/qin/6.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/qin/new 1.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>秦朝</strong><br><span></span>
+			秦女服服饰秦始皇喜欢宫中的嫔妃穿着漂亮的及以华丽为上。由于他减去礼学，对于嫔妃的服色，是以迎合他个人喜好为主。不过基本上仍受五行思想支配。秦始皇统一中国，也统一了制度，包括衣冠服制。秦始皇对于妃嫔服色，是以迎合他个人喜好为主，不过，基本上仍受五行思想的支配。因此秦代妃嫔夏天穿“浅黄藂罗衫”、披“浅黄银泥云披”，而配以芙蓉冠、五色花罗裙、五色罗小扇、泥金鞋，以衬托它。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/qin/42.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/qin/new 2.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_2">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/han/7.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/han/8.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>汉朝</strong><br><span></span>
+			汉汉朝的衣服，主要的有袍、襜褕﹝直身的单衣﹞、襦﹝短衣﹞、裙。汉代因为织绣工业很发达，所以有钱人家就可以穿绫罗绸缎漂亮的衣服。一般人家穿的是短衣长裤，贫穷人家穿的是短褐﹝粗布做的短衣﹞。汉朝的妇女穿着有衣裙两件式，也有长袍，裙子的样式也多了，最有名的是留仙裙。<br><span></span>
+			汉服的基本款式大约有九类，在基本款式下又因其领口、袖型、束腰、裁剪方式等的不同变化演绎出几百种款式。他与西服大不相同，与那些即使受到汉服影响而产生的韩服、和服等服饰也不同，足以体现华夏民族的特色。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/han/9.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/han/38.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_3">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/wei jin/10.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/wei jin/11.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>魏晋南北朝</strong><br><span></span>
+			魏晋南北朝时期老庄、佛道思想成为时尚，“魏晋风度”也表现在当时的服饰文化中。宽衣博带成为上至王公贵族下至平民百姓的流行服饰。男子穿衣坦胸露臂，力求轻松、自然、随意的感觉，魏晋的名士们多光身着宽大外衣，或者外衣内着一件类似今天吊带衫的奇特内衣，并不穿中衣，此衣式仅见于这一时代；女子服饰则长裙曳地，大袖翩翩，饰带层层叠叠，表现出优雅和飘逸的风格。
+			同时，民族间战乱频繁，却也给了各民族在服饰上互相影响互相渗透的机会，各民族服饰相互融合。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/wei jin/44.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/wei jin/45.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_4">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/tang/13.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/tang/14.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>唐朝</strong><br><span></span>
+			唐，中国古代服装发展到全盛时期，政治的稳定，经济的发达，生产和纺织技术的进步，对外交往的频繁等促使服饰空前繁荣，服装款式、色彩、图案等都呈现出前所未有的崭新局面，而这一时期的女子服饰，可谓中国服装中最为精彩的篇章，其冠服之丰美华丽，妆饰之奇异纷繁，都令人目不暇接。大唐二百余年的女子服饰形象，可主要分为襦裙服、男装、胡服三种配套服饰。唐代妇女的地位较高，在服饰中也有体现。贵族及宫廷女子多为半裸胸的宽松罗裙。歌女服饰染色醒目绚丽，贵族染色富丽高雅。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/tang/51.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/tang/52.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_5">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/song/16.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/song/17.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>宋朝</strong><br><span></span>
+			宋时爱穿着直领，对襟的背子，因为既舒适得体，又显得典雅大方。多姿多彩的唐没落了，取而代之的是宋，宋代政治上虽然开放民主，但由于“程朱理学”的思想禁锢和对外政策的妥协退让，宋朝服饰文化也不再艳丽奢华，而是简洁质朴。宋代女装拘谨、保守，色彩淡雅恬静，襦衣、褙子的遮掩功能加强，男装大体上沿袭唐代样式，一般百姓多穿交领或圆领的长袍，做事的时候就把衣服往上塞在腰带上，衣服是黑白两种颜色
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/song/18.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/song/19.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_6">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/yuan/20.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/yuan/21.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>元朝</strong><br><span></span>
+			元代是由蒙古人统治，所以元代的服饰也比较特别。蒙古人多把额上的头发弄成一小绺，像个桃子，其他的就编成两条辫子，再绕成两个大环垂在耳朵后面，头上戴笠子帽。元代人的衣服主要是“质孙服”是较短的长袍，比较紧、比较窄，在腰部有很多衣褶，这种衣服很方便上马下马。元代的贵族妇女，常戴着一顶高高长长，看起来很奇怪的帽子，这种帽子叫做“罟罟冠”。她们穿的袍子，宽大而且长，走起路来很不方便，常常要两个婢女在后面帮她们拉着袍角，一般的平民妇女，多是穿黑色的袍子。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/yuan/22.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/yuan/new 3.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_7">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/ming/23.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/ming/24.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>明朝</strong><br><span></span>
+			明朝服饰属于汉族传统服饰体系，在推翻元代蒙古人统治之后，明朝恢复汉族的传统，明太祖朱元璋根据”上承周汉，下取唐宋“，重新制定了服饰制度。明代许多男子流行的发式都是明太祖首创的，比如“网巾”，有象征国家法令齐全的意思，“四平方巾”象征国家太平，还有”六合一统帽“即“瓜皮帽”。而明代的贵妇多是穿红色大袖的袍子，一般妇女只能穿桃红、紫绿及一些浅淡的颜色。平日常穿的是短衫长裙，腰上系着绸带，裙子宽大，样式很多，
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/ming/25.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/ming/26.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div4_content_8">
+		<ul id="content_img1">
+			<li><img src="Material/traditional cloth/dynasty/qing/28.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/qing/29.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>清朝</strong><br><span></span>
+			清衣身修长，衣袖短窄，满族的旗装，外轮廓呈长方形，马鞍形领掩颊护面，衣服上下不取腰身，衫不露外，偏襟右衽以盘纽为饰，假袖二至三幅，马蹄袖盖手，镶滚工艺装饰，衣外加衣，增加坎肩或马褂……其造型完整严谨，呈封闭式盒状体，因此形象肃穆庄重，清高不凡，而独树一帜，突破了几千年来飘逸的塔形衣冠，给世人留下了深刻的形象记忆。
+		</p>
+		<ul id="content_img2">
+			<li><img src="Material/traditional cloth/dynasty/qing/30.jpg"></li>
+			<li><img src="Material/traditional cloth/dynasty/qing/31.jpg"></li>
+		</ul>
+	</div>
+
+	<p id="div4_more_info">了解更多</p>	
+</div>
+
+<div id="div4_plus">
+	<div id="div4_sub1">
+		<ul id="ul2">
+			<li id="li1"><img src="Material/traditional cloth/1_Plus.png">
+				<p>
+					道袍<br>
+					道袍是一种源自中国元代、明代的成年男子服饰，是儒生居家时的外衣，也可以作为衬袍或平民男子婚服。
+				</p></li>
+			<li id="li2"><img src="Material/traditional cloth/2_Plus.png">
+				<p>
+					袄裙<br>
+					袄裙是指上衣在裙子之外的的襦裙，它是明朝女子着装的基本款式，藩属国朝鲜也依照明朝的袄裙发展出了自己的民族特色。
+				</p></li>
+			<li id="li3"><img src="Material/traditional cloth/3_Plus.png">
+				<p>
+					褙子<br>
+					宋朝到明朝时期女子的常用服饰，样式以直领对襟为主，腋下开胯，腰间用勒帛系束，下长过膝，逐渐成为后世女子的一种常礼服。
+				</p></li>
+			<li id="li4"><img src="Material/traditional cloth/4_Plus.png">
+				<p>
+					裋褐<br>
+					以劳作方便为目的，是中国几千年来农民百姓最常穿着的衣服款式之一
+				</p></li>
+			<li id="li5"><img src="Material/traditional cloth/5_Plus.png">
+				<p>
+					齐胸襦裙<br>
+					古代裙腰束的非常高的襦裙。
+				</p></li>
+			<li id="li6"><img src="Material/traditional cloth/6_Plus.png">
+				<p>
+					交领半臂襦裙<br>
+					唐代襦裙装中的重要组成部分，半臂类似与今短袖衫，因为其袖子长度在裲裆（无领无袖）与衣衫之间，所以叫做半臂。
+				</p></li>
+			<li id="li7"><img src="Material/traditional cloth/7_Plus.png">
+				<p>
+					朱子深衣<br>
+					直领（没有续衽，类似对襟）而穿为交领，下身有裳十二幅，裳幅皆梯形。为汉服中深衣的一种，为礼服，多用于祭祀等场合.
+				</p></li>
+			<li id="li8"><img src="Material/traditional cloth/8_Plus.png">
+				<p>
+					对襟半臂襦裙<br>
+					上襦为直领，衣襟呈对称状，故称对襟襦裙
+				</p></li>
+		</ul>
+	</div>
+
+	<p id="div4_close_info">合上</p>
+</div>
+
+<div id="div5_decoration"><img src="Material/Technology/more flowers.png"></div>
+
+<div id="div5">
+	<a name="technology" id="technology"></a><!--传统服装工艺-->
+	<div id="div5_sub1"><p>传</p><p>统</p><p>服</p><p>装</p><p>工</p><p>艺</p></div>
+	
+</div>
+<div id="div6">
+	<div id="div6_sub1"><img src="Material/Embroidery/xiang xiu/8.jpg"></div>
+	<div id="div6_sub2"><img src="Material/Embroidery/yue xiu/5.jpg"></div>
+	<div id="div6_sub3"><img src="Material/Embroidery/shu xiu/3.jpg"></div>
+	<div id="div6_sub4"><img src="Material/Embroidery/su xiu/8.jpg"></div>
+	<div id="div6_sub5"><img src="Material/Technology/5.png"></div>
+	<div id="div6_sub6"><img src="Material/Technology/6.png"></div>
+	<div id="div6_sub7"><img src="Material/Technology/7.png"></div>
+	<p id="text1">
+		<b>湘绣</b><br>
+		<span></span>中国优秀的民族传统工艺之一，湘绣是以湖南长沙为中心的带有鲜明湘楚文化特色的湖南刺绣产品的总称，是勤劳智慧的湖南当地劳动人民在漫长的人类文明历史的发展过程中，精心创造的一种具有湘楚文化特色的民间工艺。近半个世纪来，考古工作者曾先后在湖南、湖北等地发现了不少麻布、锦、绢等丝织品、纺织品，其中不少是绣品。一批又一批埋藏在湖南和昔日楚地领域地底下的光彩夺目的古绣品的出土，对世人进一步认识湘绣源流沿革及其绣艺传统，意义是不言自明的。<br><span></span>
+		湘绣与苏绣、蜀绣、粤绣齐名，为中国四大名绣之一。湘绣传统上有72种针法。分平绣类、织绣类、网绣类、纽绣、结绣类五大类还有后来不断发展完善的鬅毛针以及乱针绣等针法。湘绣擅长以丝绒线绣花，绣品绒面的花型具有真实感，曾有“绣花能生香，绣鸟能听声，绣虎能奔跑，绣人能传神”的美誉。
+	</p>
+	<p id="text2">
+		<b>粤绣</b><br>
+		<span></span>粤绣是以广东省潮州市和广州市为生产中心的手工丝线刺绣的总称，包括潮绣和广绣两大分支，是中国四大名绣之一。粤绣之一的广绣最初创始于少数民族――黎族，古时绣工大多是潮州、广州男子，为世所罕见。明朝中后期形成特色。其特色有：一是用线多样，除丝线、绒线外，也用孔誉毛捻楼作线，或用马尾缠绒作线。二是用色明快，对比强烈，讲求华丽效果。三是多用金线作刺绣花纹的轮廓线。四是装饰花纹繁缛丰满，热闹欢快。五是绣工多为男工所任。绣品品种丰富，有被面、枕套、床楣、披巾、头巾、绣服、鞋帽、戏衣等，也有镜屏，挂幛、条幅等。
+	</p>
+	<p id="text3">
+		<b>蜀绣</b><br>
+		<span></span>蜀绣是中国刺绣传承时间最长的绣种之一。蜀绣的历史最早可能上溯到与中原夏朝文明同时代的古蜀三星堆文明。战国末期蜀郡已经成为位居中国第二位的丝织业基地，秦汉时开始在成都设置“锦官”（官府经营管理丝织业的机构），人们对衣饰的多样性需求使绣和锦并肩发展，并产生出了蜀绣独具特色的“锦纹针”。<br><span></span>
+		蜀绣的特点是形象生动，色彩艳丽，富有立体感，短针细密，针脚平齐，片线光亮，变化丰富。蜀绣技艺严谨精密，讲究施针，针法变化多样，针脚整齐、掺色轻柔、虚实合度、变化丰富，具有浓郁的地方色彩。<br><span></span>
+		蜀绣的技艺特点有线法平顺光亮、针脚整齐、施针严谨、掺色柔和、车拧自如、劲气生动、虚实得体，任何一件蜀绣都淋漓地展示了这些独到的技艺；蜀绣常用晕针来表现绣物的质感，体现绣物的光、色、形，把绣 物绣得惟妙惟肖。如鲤鱼的灵动、金丝猴的敏捷、人物的秀美、山川的壮丽、花鸟的多姿、熊猫的憨态等。
+	</p>
+	<p id="text4">
+		<b>苏绣</b><br>
+		<span></span>苏绣经过两千多年的发展，已形成独立的刺绣风格，但时代不断进步，艺术也需要与时俱进。面对各种新形势，苏绣企业纷纷改革，提出苏绣礼品商务化，苏绣家装设计化的理念，让传统的民间苏绣工艺不再奢侈，而是走进千家万户。个性化的量身定做，让苏绣不再局限于陈旧的模式，而是过多的融合进购买者的思路与理念，通过纯朴的苏州绣娘纯手工刺绣而成。让苏绣不仅是艺术，还更多的渗透进人性化的品味。<br><span></span>
+		苏绣具有图案秀丽、构思巧妙、绣工细致、针法活泼、色彩清雅的独特风格，地方特色浓郁。绣技具有“平、齐、和、光、顺、匀”的特点。“平”指绣面平展；“齐”指图案边缘齐整；“细”指用针细巧，绣线精细；“密”指线条排列紧凑，不露针迹；“和”指设色适宜；“光”指光彩夺目，色泽鲜明；“顺”指丝理圆转自如；“匀”指线条精细均匀，疏密一致。在种类上，苏绣作品主要可分为零剪、戏衣、挂屏三大类，装饰性与实用性兼备。其中以“双面绣”作品最为精美
+	</p>
+	<p id="text5">
+		<b>黎族传统纺染织绣技艺</b><br>
+		<span></span>黎族传统纺染织绣技艺是非物质文化遗产中的传统手工技艺。第一批国家级非物质文化遗产名录的369Ⅷ－19。黎族传统纺染织绣技艺包括纺、染、织、绣四大工序。纺纱，即把棉花脱子、抽纱，把纱绕成锭。染色，黎族传统的染料有植物染料、动物染料和矿物染料三种。织布，用踞织腰机进行织布；腰机简单轻巧，容易操作。刺绣，黎族的传统刺绣有单面刺绣和双面刺绣两种。刺绣的技术可根据针法、绣法和面料分为三个层次，把绣法、色彩、图案三者结合为一体。刺绣工艺精湛，图案朴实自然，富有独特的民族艺术风格。
+	</p>
+	<p id="text6">
+		<b>扎染</b><br>
+		<span></span>扎染古称扎缬、绞缬、夹缬和染缬，是中国民间传统而独特的染色工艺。织物在染色时部分结扎起来使之不能着色的一种染色方法，中国传统的手工染色技术之一。扎染工艺分为扎结和染色两部分。它是通过纱、线、绳等工具，对织物进行扎、缝、缚、缀、夹等多种形式组合后进行染色。其工艺特点是用线在被印染的织物打绞成结后，再进行印染，然后把打绞成结的线拆除的一种印染技术。它有一百多种变化技法，各有特色。如其中的“卷上绞”，晕色丰富，变化自然，趣味无穷。更使人惊奇的是扎结每种花，即使有成千上万朵，染出后却不会有相同的出现。这种独特的艺术效果，是机械印染工艺难以达到的。<br><span></span>
+		扎染有着悠久历史。起源于黄河流域。起源于何时尚无定论。现存最早的扎染制品，是出于新疆地区。据记载，早在东晋，扎结防染的绞缬绸已经有大批生产。公元408年东晋时期的作品，扎染这种工艺早在东晋时期就已经成熟了。当时绞缬产品，有较简单的小簇花样，如蝴蝶、腊梅、海棠等；也有整幅图案花样，如白色小圆点的“鱼子缬”，紫地白花斑酷似梅花鹿的“鹿胎缬”等。唐代是我国古代文化鼎盛时期，绞缬的纺织品甚为流行，“青碧缬衣裙”成为唐代时尚的基本式样。
+	</p>
+	<p id="text7">
+		<b>拼布</b><br>
+		<span></span>
+		这种工艺历史悠久，最早起源于古埃及和中国北方地区，人们为了防寒而产生的。在中世纪和文艺复兴时期的欧洲，物资匮乏，最初是穷人将零碎小布、旧的衣服和窗帘等裁剪成布块，拼接成床单、毛毯等生活必需品。随着移民潮的兴起，拼布又流传到了美洲大陆，并得到了普及和发展。在早期美洲，由于移民的生活需要，拼布发展以实用为主。<br><span></span>
+		拼布，是将一定形状的小片织物拼缝在一起的工艺。起初的拼布，只是寻常百姓，从节约的角度出发，把零碎的废旧布料拼接、缝缀起来，做成衣服或被褥等生活用品，因此，往往带有比较明显的实用性。<br><span></span>
+		拼布已从废物利用转变为艺术创作，早已超出了实用的日常生活品的内涵，成了一件极具观赏和审美价值的“生活艺术品”。通过拼缝各种各样的布片，并随意结合各种刺绣、编织、钩编等手工艺，可以做手提包、靠垫、挂毯、玩偶等各种各样的装饰品和物品。正因为如此，拼布艺术品受到广泛青睐并成了都市人时尚生活的一部分。
+	</p>
+
+	<p id="div6_more_info">了解更多</p>
+</div>
+
+<div id="div6_plus">
+	<ol id="div6_plus_nav">
+		<li id="xiang_embroidery">湘绣</li>
+		<li id="yue_embroidery">粤绣</li>
+		<li id="shu_embroidery">蜀绣</li>
+		<li id="su_embroidery">苏绣</li>
+		<li id="rong_embroidery">绒绣</li>
+		<li id="ding_embroidery">钉金绣</li>
+		<li id="chao_embroidery">潮绣</li>
+	</ol>
+	<hr>
+	<div id="div6_plus_content_1">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/xiang xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>湘绣</strong><br><span></span>
+			中国优秀的民族传统工艺之一，湘绣是以湖南长沙为中心的带有鲜明湘楚文化特色的湖南刺绣产品的总称，是勤劳智慧的湖南当地劳动人民在漫长的人类文明历史的发展过程中，精心创造的一种具有湘楚文化特色的民间工艺。近半个世纪来，考古工作者曾先后在湖南、湖北等地发现了不少麻布、锦、绢等丝织品、纺织品，其中不少是绣品。一批又一批埋藏在湖南和昔日楚地领域地底下的光彩夺目的古绣品的出土，对世人进一步认识湘绣源流沿革及其绣艺传统，意义是不言自明的。湘绣与苏绣、蜀绣、粤绣齐名，为中国四大名绣之一。湘绣传统上有72种针法。分平绣类、织绣类、网绣类、纽绣、结绣类五大类还有后来不断发展完善的鬅毛针以及乱针绣等针法。湘绣擅长以丝绒线绣花，绣品绒面的花型具有真实感，曾有“绣花能生香，绣鸟能听声，绣虎能奔跑，绣人能传神”的美誉
+		</p>
+		
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/xiang xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/xiang xiu/10.jpg"></li>
+		</ul>		
+	</div>
+
+	<div id="div6_plus_content_2">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/yue xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/5.jpg"></li>
+		</ul>
+		
+		<p id="content_description">
+			<strong>粤绣</strong><br><span></span>
+			粤绣是以广东省潮州市和广州市为生产中心的手工丝线刺绣的总称，包括潮绣和广绣两大分支，是中国四大名绣之一。粤绣之一的广绣最初创始于少数民族――黎族，古时绣工大多是潮州、广州男子，为世所罕见。明朝中后期形成特色。其特色有：一是用线多样，除丝线、绒线外，也用孔誉毛捻楼作线，或用马尾缠绒作线。二是用色明快，对比强烈，讲求华丽效果。三是多用金线作刺绣花纹的轮廓线。四是装饰花纹繁缛丰满，热闹欢快。五是绣工多为男工所任。绣品品种丰富，有被面、枕套、床楣、披巾、头巾、绣服、鞋帽、戏衣等，也有镜屏，挂幛、条幅等。<br><span></span>
+			粤绣的欣赏品有条屏、座屏、屏风等。日用品的品种很多，主要有服装、鞋、帽、头巾、被面、枕套、靠垫、披巾、门帘、台布、床罩等。潮州的刺绣潮剧服装闻名遐迩。宗教用品大多为神袍以及寺庙内的装饰品。粤绣按刺绣技艺分，又有丝线绣、金银线绣、双面绣、垫绣等品种。
+		</p>
+		
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/yue xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/yue xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div6_plus_content_3">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/shu xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>蜀绣</strong><br><span></span>
+			蜀绣又名“川绣”，是在丝绸或其他织物上采用蚕丝线绣出花纹图案的中国传统工艺，主要指以四川成都为中心的川西平原一带的刺绣蜀绣最早见于西汉的记载，当时的工艺已相当成熟，同时传承了图案配色鲜艳、常用红绿颜色的特点。<br><span></span>
+			蜀绣的特点是形象生动，色彩艳丽，富有立体感，短针细密，针脚平齐，片线光亮，变化丰富。蜀绣技艺严谨精密，讲究施针，针法变化多样，针脚整齐、掺色轻柔、虚实合度、变化丰富，具有浓郁的地方色彩。<br><span></span>
+			清代确立了“蜀绣、苏绣、湘绣、粤绣”为中国四大名绣。蜀绣是中国刺绣传承时间最长的绣种之一。蜀绣的历史最早可能上溯到与中原夏朝文明同时代的古蜀三星堆文明。战国末期蜀郡已经成为位居中国第二位的丝织业基地，秦汉时开始在成都设置“锦官”（官府经营管理丝织业的机构），人们对衣饰的多样性需求使绣和锦并肩发展，并产生出了蜀绣独具特色的“锦纹针”。
+		</p>
+	
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/shu xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/shu xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div6_plus_content_4">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/su xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>苏绣</strong><br><span></span>
+			苏绣是中国优秀的民族传统工艺之一，是苏州地区刺绣产品的总称，其发源地在苏州吴县一带，现已遍衍无锡、常州等地。刺绣与养蚕，缫丝分不开，所以刺绣，又称丝绣。清代确立了“苏绣、湘绣、粤绣、蜀绣”为中国四大名绣。清代是苏绣的全盛时期，真可谓流派繁衍，名手竞秀。苏绣具有图案秀丽、构思巧妙、绣工细致、针法活泼、色彩清雅的独特风格，地方特色浓郁。<br><span></span>
+			苏绣经过两千多年的发展，已形成独立的刺绣风格，但时代不断进步，艺术也需要与时俱进。面对各种新形势，苏绣企业纷纷改革，提出苏绣礼品商务化，苏绣家装设计化的理念，让传统的民间苏绣工艺不再奢侈，而是走进千家万户。个性化的量身定做，让苏绣不再局限于陈旧的模式，而是过多的融合进购买者的思路与理念，通过纯朴的苏州绣娘纯手工刺绣而成。让苏绣不仅是艺术，还更多的渗透进人性化的品味
+		</p>
+
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/su xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/su xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div6_plus_content_5">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/rong xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>绒绣</strong><br><span></span>
+			绒绣，亦名“绒线绣”。是一种在特制的网眼麻布上，用彩色羊毛绒线绣出各种画面和图案的刺绣。中国绒绣主要产于上海、辽宁朝阳和山东烟台。这种绣法好像不是绒绣，理论上和绒一点关系没有。只因绣线是毛线而叫绒绣不太贴切，绒线绣可以。绒绣应该是跺针绣或是掇针绣，然后剪绒，因表面堆积成绒状。类似地毯一样。上个世纪6,7十年代，风靡全国。<br><span></span>
+			绒绣是用彩色绒线在特制的网眼麻布上进行绣制的一种手工艺品。由于绒线本身没有反光，具有毛绒感，绣品浑厚庄重、色彩丰富、层次清晰、形象生动、风格独特。基本针法与我国传统的打点绣针法（又名戳纱）相同。用有规则的斜针按网眼一格一针绣制，每针就是一个椭圆形小色块。一幅绒绣少则几万针，多则须几十万针。绣制时，可自行拼色。它善于表现油画、国画、摄影等艺术效果。　绒绣源于刺绣、高于刺绣。通过染色、劈线、汇色、色渐变、网点过渡、调色丰富画面等工艺来表现。
+		</p>
+
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/rong xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/rong xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div6_plus_content_6">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/ding jin xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>钉金绣</strong><br><span></span>
+			钉金绣，又称金银绣；以金银线为主，绒线为辅的叫金绒混合线。钉金绣针法复杂，有过桥、踏针、捞花瓣、垫地、凹针、累勾绣等60多种针法，其中"二针企鳞"针法为其他绣种所无钉金绣运用垫、绣、贴、拼、缀等技术处理，可产生浮雕式的艺术效果。钉金绣的针法虽然较为简单，但绣法中又有一些变化，故而具体地又可分为盘金绣、钉金线绣、蹙金彩绣与彩绣压金四种。<br>
+			盘金绣：是指全部采用捻金线以钉线绣方法盘成块状纹样的绣法。又可称为蹙金绣，是唐代非常流行的绣法。<br>
+			钉金线绣：指采用捻金线或银线用钉线绣法绣成线条状纹样的绣法。这种绣法用金较少，而效果也不错，有时会采用局部的蹙金绣以强调图案的主题。<br>
+			蹙金彩绣：是指间用蹙金绣和彩绣完成不同纹样区域的绣法。<br>
+			彩绣压金：先用彩绣绣出图案基本形状，待完成之后再用捻金线以钉线绣法勾出轮廓，辽金之时极为流行
+		</p>
+
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/ding jin xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/ding jin xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<div id="div6_plus_content_7">
+		<ul id="content_img1">
+			<li><img src="Material/Embroidery/chao xiu/1.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/2.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/3.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/4.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/5.jpg"></li>
+		</ul>
+
+		<p id="content_description">
+			<strong>潮绣</strong><br><span></span>
+			潮绣，粤绣之一，发源并流行于今潮汕地区，自清代以来，潮州妇女多勤纺织，女子到了十一二岁，其母即为预制嫁衣，家家户户都会织缍刺绣。清代粤绣工人大多是广州、潮州人，广东男子精于绣功，为其他省市所罕见。刺绣艺术被广泛应用于日常生活实用装饰品上潮绣属于广东刺绣。传说潮绣创始于少数民族（黎族）其与黎族织锦同源，潮绣有着有强烈的地方色彩，构图饱满均衡，针法繁多，纹理清晰，金银线镶，托地垫高，色彩浓艳，装饰性强，尤以富有浮雕效果的垫高绣法独异于其它绣法，此外，以金碧、粗犷、雄浑的垫凸浮雕效果的钉金绣也尤为人所瞩目，宜宇庙堂会所装饰和喜庆之用。潮绣以金碧、粗犷、雄浑的垫凸浮雕效果的钉金绣为特色而标异于其他绣种。题材有人物、龙凤、博古、动物、花卉等，以饱满、匀称的构图和热烈喜庆的色彩，气氛鲜明、生动地表现题材，使潮绣产生了丰富瑰丽的艺术效果。
+		</p>
+
+		<ul id="content_img2">
+			<li><img src="Material/Embroidery/chao xiu/6.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/7.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/8.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/9.jpg"></li>
+			<li><img src="Material/Embroidery/chao xiu/10.jpg"></li>
+		</ul>
+	</div>
+
+	<p id="div6_close_info">合上</p>
+</div>
+
+<div id="div7">
+	<a name="marry" id="marry"></a><!--嫁衣-->
+	<div id="div7_sub1">
+		<img id="img1" src="Material/Marry/fan down.png">
+		<span>嫁</span><span>衣</span>
+		<img id="img2" src="Material/Marry/fan up.png">
+	</div>
+	<div id="div7_sub2">
+
+		<a class="mark_left" href="javascript:;"></a>
+		<a class="mark_right" href="javascript:;"></a>
+
+		<div class="prev"></div>
+		<div class="next"></div>
+
+		<ul>
+			<li><img src="Material\Marry\1.jpg"></li>
+			<li><img src="Material\Marry\2.jpg"></li>
+			<li><img src="Material\Marry\3.jpg"></li>
+			<li><img src="Material\Marry\4.jpg"></li>
+			<li><img src="Material\Marry\5.jpg"></li>
+			<li><img src="Material\Marry\6.png"></li>
+			<li><img src="Material\Marry\7.png"></li>
+			<li><img src="Material\Marry\8.png"></li>
+		</ul>
+	</div>
+	<p>
+		<span></span>在中国的传统习俗中，嫁衣是女孩子一生中最重要的服装，大多是由女孩自己从小就开始做，一直做到出嫁前才完成，这件嫁衣也因此寄托了女孩子少女时代全部的梦想。古时，民间旧俗新娘的传统嫁衣是：头戴凤冠，脸遮红方巾，上身内穿红娟衫，外套绣花红袍，颈套项圈天官锁，胸挂照妖镜，肩披霞帔，肩上挎个子孙袋，手臂缠“定手银”；下身着红裙、红裤、红缎绣花鞋，千娇百媚，一身红色，喜气洋洋。古时的嫁衣一定要量身定做，手工缝制，才能显现它的珍贵和唯一。
+	</p>
+</div>
+
+<div id="div8">
+	<a name="headwear" id="headwear"></a><!--头饰-->
+	<div id="div8_sub1">
+		<div id="div8_ssub1"></div>
+		<div id="div8_ssub1Plus"></div>
+		<div id="div8_ssub2">
+			<ul>
+				<li><img class="active" src="Material/headwear/p1.jpg"></li>
+				<li><img src="Material/headwear/p2.jpg"></li>
+				<li><img src="Material/headwear/p3.jpg"></li>
+				<li><img src="Material/headwear/p4.jpg"></li>
+				<li><img src="Material/headwear/p5.jpg"></li>
+				<li><img src="Material/headwear/p6.jpg"></li>
+				<li><img src="Material/headwear/p7.jpg"></li>
+				<li><img src="Material/headwear/p8.jpg"></li>
+			</ul>
+		</div>
+
+		<ol id="ol1">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ol>
+
+		<div id="div8_ssub2Plus">
+			<ul>
+				<li><img class="active" src="Material/headwear/h1.jpg"></li>
+				<li><img src="Material/headwear/h2.jpg"></li>
+				<li><img src="Material/headwear/h3.jpg"></li>
+				<li><img src="Material/headwear/h4.jpg"></li>
+				<li><img src="Material/headwear/h5.jpg"></li>
+				<li><img src="Material/headwear/h6.jpg"></li>
+				<li><img src="Material/headwear/h7.jpg"></li>
+				<li><img src="Material/headwear/h8.jpg"></li>
+			</ul>
+		</div>
+
+		<ol id="ol2">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ol>
+
+	</div>
+	<div id="div8_sub2">
+		<span id="span1">头</span>
+		<img src="Material/headwear/butterfly.png">
+		<span id="span2">饰</span>
+	</div>
+	<p id="div8_more_info">了解更多</p>
+</div>
+
+<div id="div8_plus">
+	<ol id="div8_plus_nav">
+		<li id="div8_plus_mo_e">抹额</li>
+		<li>步摇</li>
+		<li>发髻</li>
+		<li>凤冠</li>
+	</ol>
+	<hr>
+	<div id="div8_plus_content_1">
+		<ul id="content_img1">
+			<li><img src="Material/headwear/mo e/1.jpg"></li>
+			<li><img src="Material/headwear/mo e/2.jpg"></li>
+			<li><img src="Material/headwear/mo e/3.jpg"></li>
+			<li><img src="Material/headwear/mo e/4.jpg"></li>
+			<li><img src="Material/headwear/mo e/5.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>抹额</strong><br>
+			抹额，也称额带、头箍、发箍、眉勒、脑包，中国服饰，明代较盛行。妇女包于头额，束在额前的巾饰，一般多饰以刺绣或珠玉。在宋代的仪卫中，如教官服幞头红绣抹额，招箭班的皆长脚幞头，紫绣抹额，就是用红紫等色的纱绢，裹在头上的抹额。明代是抹额的盛行时期，当时的妇女不分尊卑，不论主仆，额间常系有这种饰物。这个时期的抹额形制也发生了很大的变化，除了用布条围勒于额外，还出现了多种样式：有的用彩锦缝制成菱形，紧扎于额：有的用纱罗裁制成条状，虚掩在眉问：有的则用黑色丝帛贯以珠宝，悬挂在额头，还有一种抹额，以丝绳编织成网状，上缀珠翠花饰，使用时绕额一周，系结于脑后。这种抹额被称之为渔婆巾，或者叫渔婆勒巾，其实物还有遗存。冬季所用的抹额，通常以绒、尉，毛毡等厚实的材料为之；有的用绸缎纳以丝绵，外表施以彩绣；考究者还装缀珠翠宝玉，两端则各装金属搭扣，用时围勒于额，绾结于后。
+		</p>
+		<ul id="content_img1">
+			<li><img src="Material/headwear/mo e/6.jpg"></li>
+			<li><img src="Material/headwear/mo e/7.jpg"></li>
+			<li><img src="Material/headwear/mo e/8.jpg"></li>
+			<li><img src="Material/headwear/mo e/9.jpg"></li>
+			<li><img src="Material/headwear/mo e/10.jpg"></li>
+		</ul>		
+	</div>
+
+	<div id="div8_plus_content_2">
+		<ul id="content_img1">
+			<li><img src="Material/headwear/bu yao/1.jpg"></li>
+			<li><img src="Material/headwear/bu yao/2.jpg"></li>
+			<li><img src="Material/headwear/bu yao/3.jpg"></li>
+			<li><img src="Material/headwear/bu yao/4.jpg"></li>
+			<li><img src="Material/headwear/bu yao/5.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>步摇</strong><br>
+			中国古代妇女的一种首饰。取其行步则动摇，故名。其制作多以黄金屈曲成龙凤等形，其上缀以珠玉。六朝而下，花式愈繁，或伏成鸟兽花枝等，晶莹辉耀，与钗钿相混杂，簪于发上，材料主要有金、银、玉、玛瑙等。步摇为我国传统汉民族首饰，西汉时在西域地区有其雏形进而吸收创新而来，一般形式为凤凰、蝴蝶、带有翅膀类的，或垂有流苏或坠子，走路的时候，金饰会随走路的摆动而动，栩栩如生。取其行步则动摇，故名步摇。步摇为我国传统汉民族首饰，西汉时在西域地区有其雏形进而吸收创新而来，约在东汉时经燕传入辽西，后又向东传入 高丽鲜半岛及日本并对当地的文化都产生了深远的影响。步摇以金银玉石等质地，宋明以来一直流传的头饰。其形制与质地都是等级与身份的象征。汉代以后，步摇才逐渐被民间百姓所见，才有机会在社会上广为流传。在贵族妇女中，还实行过一阵加於冠上的步摇冠。戴在头上较之步摇更富有富贵豪华之感。
+		</p>
+		<ul id="content_img1">
+			<li><img src="Material/headwear/bu yao/6.jpg"></li>
+			<li><img src="Material/headwear/bu yao/7.jpg"></li>
+			<li><img src="Material/headwear/bu yao/8.jpg"></li>
+			<li><img src="Material/headwear/bu yao/9.jpg"></li>
+			<li><img src="Material/headwear/bu yao/10.jpg"></li>
+		</ul>		
+	</div>
+
+	<div id="div8_plus_content_3">
+		<ul id="content_img1">
+			<li><img src="Material/headwear/fa zan/1.jpg"></li>
+			<li><img src="Material/headwear/fa zan/2.jpg"></li>
+			<li><img src="Material/headwear/fa zan/3.jpg"></li>
+			<li><img src="Material/headwear/fa zan/4.jpg"></li>
+			<li><img src="Material/headwear/fa zan/5.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>发簪</strong><br>
+			发簪，古代中国用来固定和装饰头发的一种首饰。对于现代女性来说已经是一个很古老的名词了，但是当我们在看古装剧时，却总是能被它们点缀出的精致效果所折服。将长发松松挽起，插上一枚别致的发簪，再配上典雅的长裙，即便性格再外放的女性，也可以成为让人眼前一亮的古典美人。发簪金属的光泽闪耀在发间，加上小而巧的坠饰，长发的风情便又是一种不一样的感受了。发簪式样十分丰富，主要变化多集中在簪首。它有各种各样的形状，还爱用花鸟鱼虫、飞禽走兽作簪首形状。常见的花种有梅花、莲花、菊花、桃花、牡丹花和芙蓉花等。明人《天水冰山录》中关于发簪名就有“金桃花顶簪”、“金梅花宝顶簪”、“金菊花宝顶簪”、“金宝石顶簪”、“金厢倒垂莲簪”、“金厢猫睛顶簪”、“金崐点翠梅花簪”等名称。以动物为簪首的发簪，常见的有龙凤、麒麟、燕雀及游鱼等，其中以凤簪最多，制作也最为精致。
+		</p>
+		<ul id="content_img1">
+			<li><img src="Material/headwear/fa zan/6.jpg"></li>
+			<li><img src="Material/headwear/fa zan/7.jpg"></li>
+			<li><img src="Material/headwear/fa zan/8.jpg"></li>
+			<li><img src="Material/headwear/fa zan/9.jpg"></li>
+			<li><img src="Material/headwear/fa zan/10.jpg"></li>
+		</ul>		
+	</div>
+
+	<div id="div8_plus_content_4">
+		<ul id="content_img1">
+			<li><img src="Material/headwear/feng guan/1.jpg"></li>
+			<li><img src="Material/headwear/feng guan/2.jpg"></li>
+			<li><img src="Material/headwear/feng guan/3.jpg"></li>
+			<li><img src="Material/headwear/feng guan/4.jpg"></li>
+			<li><img src="Material/headwear/feng guan/5.jpg"></li>
+		</ul>
+		<p id="content_description">
+			<strong>凤冠</strong><br>
+			古代皇帝后妃的冠饰，其上饰有凤凰样珠宝。明朝凤冠是皇后受册、谒庙、朝会时戴用的礼冠，其形制承宋之制而又加以发展和完善，因之更显雍容华贵之美。 明清时一般女子盛饰所用彩冠也叫凤冠，多用于婚礼时。冠上饰件以龙凤为主，龙用金丝堆累工艺焊接，呈镂空状，富有立体感；凤用翠鸟毛粘贴，色彩经久艳丽。冠上嵌饰龙、凤、珠宝花、翠云、翠叶及博鬓，这些部件都是先单独作成，然后插嵌在冠上的插管内，组合成一顶凤冠。 凤冠造型庄重，制作精美，其工艺有花丝、镶嵌、錾雕、点翠、穿系等项。点翠面积大（四顶凤冠上有翠凤23只，翠云翠叶翠花多达数百片），宝石镶嵌多达400余颗，大小珠花及珠宝串饰的制作也不少。最后的组装更是一项非常复杂的工序，各饰件的放置，几千颗珍珠的穿系，几百颗宝石的镶嵌，诸多饰物于一冠，安排合理。凤冠口衔珠宝串饰，金龙、翠凤、珠光宝气交相辉映，富丽堂皇，非一般工匠所能达到。
+		</p>
+		<ul id="content_img1">
+			<li><img src="Material/headwear/feng guan/6.jpg"></li>
+			<li><img src="Material/headwear/feng guan/7.jpg"></li>
+			<li><img src="Material/headwear/feng guan/8.jpg"></li>
+			<li><img src="Material/headwear/feng guan/9.jpg"></li>
+			<li><img src="Material/headwear/feng guan/10.jpg"></li>
+		</ul>		
+	</div>
+
+	<p id="div8_close_info">合上</p>
+</div>
+
+<div id="div9">
+	<a name="nation" id="nation"></a><!--56个民族服装-->
+	<div id="div9_sub1">
+		<p id="p1">56</p><p id="p2">个</p><p id="p3">民</p><p id="p4">族</p><p id="p5">服</p><p id="p6">饰</p>
+	</div>
+	<div id="div9_sub2">
+		<ul id="nation1">
+			<li><img id="img1" src="Material/56 nation/1.jpg"><p>阿昌族</p></li>
+			<li><img src="Material/56 nation/2.jpg"><p>保安族</p></li>
+			<li><img src="Material/56 nation/3.jpg"><p>布朗族</p></li>
+			<li><img src="Material/56 nation/4.jpg"><p>布依族</p></li>
+		</ul>
+		<ul id="nation2">
+			<li><img id="img1" src="Material/56 nation/5.jpg"><p>藏族</p></li>
+			<li><img src="Material/56 nation/6.jpg"><p>朝鲜族</p></li>
+			<li><img src="Material/56 nation/7.jpg"><p>达斡尔族</p></li>
+			<li><img src="Material/56 nation/8.jpg"><p>傣族</p></li>
+		</ul>
+		<ul id="nation3">
+			<li><img id="img1" src="Material/56 nation/9.jpg"><p>东乡族</p></li>
+			<li><img src="Material/56 nation/10.jpg"><p>侗族	</p></li>
+			<li><img src="Material/56 nation/11.jpg"><p>俄罗斯</p></li>
+			<li><img src="Material/56 nation/12.jpg"><p>鄂伦春族</p></li>
+		</ul>
+		<ul id="nation4">
+			<li><img id="img1" src="Material/56 nation/13.jpg"><p>鄂温克族</p></li>
+			<li><img src="Material/56 nation/14.jpg"><p>高山族</p></li>
+			<li><img src="Material/56 nation/15.jpg"><p>哈尼族</p></li>
+			<li><img src="Material/56 nation/16.jpg"><p>哈萨克族</p></li>
+		</ul>
+		<ul id="nation5">
+			<li><img id="img1" src="Material/56 nation/17.jpg"><p>京族</p></li>
+			<li><img src="Material/56 nation/18.jpg"><p>景颇族</p></li>
+			<li><img src="Material/56 nation/19.jpg"><p>柯尔克孜族</p></li>
+			<li><img src="Material/56 nation/20.jpg"><p>黎族</p></li>
+		</ul>
+		<ul id="nation6">
+			<li><img id="img1" src="Material/56 nation/21.jpg"><p>傈僳族</p></li>
+			<li><img src="Material/56 nation/22.jpg"><p>满族</p></li>
+			<li><img src="Material/56 nation/23.jpg"><p>毛南族</p></li>
+			<li><img src="Material/56 nation/24.jpg"><p>门巴族</p></li>
+		</ul>
+	</div>
+	<p id="div9_more_info">了解更多</p>
+</div>
+<div id="div9_plus">
+	<ul id="div9_plus_ul1">
+		<li>
+			<img src="Material/56 nation/1.jpg" align="left">
+			<p><strong>阿昌族</strong><br />
+				阿昌族的服饰简洁、朴素、美观。男子多穿蓝色、白色或黑色的对襟上衣、黑色长裤，裤脚短而宽。小伙子喜缠白色包头，婚后则改换黑色包头。有些中老年人还喜欢戴毡帽。青壮年打包头时总要留出约 40厘米长的穗头垂于脑后。如外出赶集或参加节日聚会时，喜欢斜背一个 “筒帕”（挎包）和一把阿昌刀。妇女的服饰有年龄和婚否之别。未婚少女平时多着各色大襟或对襟上衣、黑色长裤，外系围腰，头戴黑色包头。梁河地区的妇女一般穿红色或蓝色对襟上衣和筒裙，小腿裹绑腿，用黑布裹包头，高达约 0.3公尺，包头顶端左侧还垂挂四五个五彩小绣球，颇具特色。
+			</p>
+		</li>
+		<li>		
+			<p><strong>保安族</strong><br />
+				如今的保安人的服饰与当地的回族、东乡族无根本差异。男子平时戴白色号帽，身穿白色衬衣，黑色坎肩，蓝或灰色裤子；走亲访友或外出时，多穿中山服或军便服。未婚女子多穿鲜艳的各色上衣，头戴细薄柔软透亮的绿绸盖头；已婚少妇以及中年妇女平时多戴白色卫生帽，外出时则戴黑色盖头；老年妇女多着深色服饰，戴白盖头。
+			</p>
+			<img src="Material/56 nation/2.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/3.jpg" align="left">
+			<p><strong>布朗族</strong><br />
+				布朗族穿着简朴，男女皆喜欢穿青色和黑色衣服，妇女的衣裙与傣族相似，上穿紧身短衣，头顶挽髻，用头巾缠头，喜欢戴大耳环、银手镯等装饰。姑娘爱戴野花或自编的彩花，将双颊染红。男子一般穿黑色或青色宽大长裤和对襟无领上衣缠头巾。成年男子喜爱纹身。
+			</p>
+		</li>
+		<li>			
+			<p><strong>布依族</strong><br />
+				男女多喜欢穿蓝、青、黑、白等色布服装。青壮年男子多包头巾，穿对襟短衣（或大襟长衫）和长裤。老年人大多穿对襟短衣或长衫。妇女的服饰各地不一，有的穿蓝黑色百褶长裙，有的喜欢在衣服上绣花，有的喜欢用白毛巾包头，戴银质手镯、耳环、项圈等首饰。布依族姑娘从小就有制作蜡染的灵气，她们所穿的服装大都是亲手缝制，合身得体，古朴典雅。
+			</p>
+			<img src="Material/56 nation/4.jpg" align="right">
+		</li>
+	</ul>
+
+	<ul id="div9_plus_ul2">
+		<li>
+			<img src="Material/56 nation/5.jpg" align="left">
+			<p><strong>藏族</strong><br />
+				藏族服饰无论男女至今保留完整。不同的地域，有着不同的服饰。特点是长袖、宽腰、大襟。妇女冬穿长袖长袍，夏着无袖长袍，内穿各种颜色与花纹的衬衣，腰前系一块彩色花纹的围裙。藏族同胞特别喜爱“哈达”，把它看作是最珍贵的礼物。“哈达”是雪白的织品，一般宽约二、三十厘米、长约一至两米，用纱或丝绸织成，每有喜庆之事，或远客来临，或拜会尊长、或远行送别，都要献哈达以示敬意。
+
+			</p>
+		</li>
+		<li>			
+			<p><strong>朝鲜族</strong><br />
+				朝鲜族喜穿素白衣服，一般为短衣长裤。男子上衣斜襟无扣，用布条打结外加坎肩，下衣裤裆肥大，裤脚系带。妇女短衣斜襟无钮扣，以彩带为结，长裙分缠裙、筒裙（只限婚前）。老年妇女多穿白色长裙，中年妇女多穿缠裙，长及脚跟。年轻妇女的裙幅多为色彩鲜艳的绸缎。近代男子多穿平面白胶鞋，劳动时穿草鞋。女子穿船形胶鞋。现在除节日或民族集会外，朝鲜族基本不穿民族服装，和汉族已无甚差别。
+
+			</p>
+			<img src="Material/56 nation/6.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/7.jpg" align="left">
+			<p><strong>达斡尔族</strong><br />
+				达斡尔族男子头戴皮帽，身穿长袍，下着皮裤，脚蹬皮靴。帽子多用狍、狼或狐狸的头皮做成，毛朝外，双耳、	犄角挺立，形象逼真，出猎时，既防寒又护身。靴子多选用狍、犴、牛等皮。除皮质服装外，达斡尔族还穿布制的袍子和裤子。冬天穿棉袍，天冷时外套犴背心，春秋穿夹袍，夏季穿单袍。妇女早期着皮衣，清朝以后以布衣为主。服装的颜色多为蓝、黑、灰，老年妇女还喜欢在长袍外套上坎肩。
+			</p>
+		</li>
+		<li>			
+			<p><strong>傣族</strong><br />
+				傣族妇女一般喜欢穿窄袖短衣和统裙。上面穿一件白色或绯色内衣，外面是紧身短上衣，园领窄袖，有大襟，也有对襟，有水红、淡黄、浅绿、雪白、天蓝等多种色彩。现在多是用乔其纱、丝绸、的确良等料子缝制。窄袖短衫紧紧地套着胳膊，几乎没有一点空隙，有不少人还喜欢用肉色衣料缝制，若不仔细看，还看不出袖管，前后衣襟刚好齐腰，紧紧裹住身子，再用一根银腰带系着短袖衫和统裙口，下着长至脚踝的统裙，腰身纤巧细小，下摆宽大。傣族妇女的这种装束，充分展示了女性的胸、腰、臀“三围”之美，加上所采用的布料经柔，色彩鲜艳明快，无论走路或做事，都给人一种婀娜多姿、潇洒飘逸的感觉。傣族男子一般都穿无领对襟或大襟小袖衫，下穿长管裤,用白布、青布或绯布包头，有的戴呢礼帽，显得潇洒大方。傣族无论男女，出门总喜欢在肩上挎一个用织绵做成的挎包（筒帕）。挎包色调鲜艳，风格淳朴，具有浓厚的生活色彩和民族特色。图案有珍禽异兽，树木花卉或几何图形，形象逼真，栩栩如生。每一种图案都含有具体的内容，如：红、绿色是为了纪念祖先；孔雀图案表示吉祥如意；大象图案象征着五谷丰登，生活美好；充分表现了傣族人民对美好生活的向往和追求。
+			</p>
+			<img src="Material/56 nation/8.jpg" align="right">
+		</li>
+	</ul>
+
+	<ul id="div9_plus_ul3">
+		<li>
+			<img src="Material/56 nation/9.jpg" align="left">
+			<p><strong>东乡族</strong><br />
+				东乡族男子多穿宽大长袍，束腰带，挂腰刀、烟荷包。妇女多穿圆领、大襟、宽袖的绣花上装。下穿套裤，裤筒后面开小衩，裤筒、裤脚有镶或绣的花边。喜庆节日则穿绣花裙，绣花鞋。男子戴平顶无檐白、黑软帽。妇女在家戴绣着花纹的便帽，外出戴遮住全部头发的丝绸盖头。少女和新婚者戴绿色，婚后及中年妇女戴黑色，老年妇女戴白色。妇女的首饰以银制耳环及手镯、玛瑙珠子为主。
+			</p>
+		</li>
+		<li>			
+			<p><strong>侗族</strong><br />
+				侗族女性的服饰千姿百态，或款式不同，或装饰部位不同，或图案和工艺不同，或色彩和发型、头帕不同，她们平时穿着便装，讲求实用，盛装时注重装饰审美，朴素与华贵相得益彰。根据整个侗族妇女服装特点，可将侗族服装分为三种款式，即：紧束型裙装、宽松型裙装和裤装。  男子服饰为青布包头、立领对襟衣、系腰带，外罩无纽扣短坎肩，下着长裤，裹绑腿，穿草鞋或赤脚，衣襟等处有绣饰。侗族的马尾背扇堪称一流绣品，其造型古老、绣工精制，图案严谨，色彩富丽，充分展示出侗族女子的聪慧和高超技艺。
+			</p>
+			<img src="Material/56 nation/10.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/11.jpg" align="left">
+			<p><strong>俄罗斯</strong><br />
+				俄罗斯族人的服饰丰富多彩，男的穿制服、马裤、皮靴或皮鞋，女的穿连衣裙（俗名布拉祺）。中年人多穿汉族服装或西服。年轻人则爱随社会的潮流，喜欢穿时装。
+			</p>
+		</li>
+		<li>			
+			<p><strong>鄂伦春族</strong><br />
+				鄂伦春族均着宽肥大袍。因过去主要从事游猎，服饰多以鹿、狍、犴皮制作。领口、袖口、襟边、大袍开衩处均有刺绣、补花等装饰，常用云纹、鹿角纹等。戴犴皮帽，女帽顶用毡子，上缝各种装饰和彩穗；姑娘戴缀有珠子、贝壳、扣子等装饰的头带。男子出猎时，穿狍皮衣、皮裤，戴狍头皮帽，穿乌拉。现今日常已普遍着布衣、胶鞋，但出猎时仍多着皮衣。
+			</p>
+			<img src="Material/56 nation/12.jpg" align="right">
+		</li>
+	</ul>
+
+	<ul id="div9_plus_ul4">
+		<li>
+			<img src="Material/56 nation/13.jpg" align="left">
+			<p><strong>鄂温克族</strong><br />
+				鄂温克族服饰的原料主要为兽皮。大毛上衣斜对襟、衣袖肥大，束长腰带。短皮上衣、羔皮袄，是婚嫁或节日礼服。无论男女，衣边、衣领等处都用布或羔皮制作的装饰品镶边，穿用时束上腰带。喜爱蓝、黑色的衣服。皮套裤外面绣着各种花纹，天冷时穿在皮裤的外面。男子夏戴布制单帽，冬戴圆锥形皮帽，顶端缀有红缨穗。鄂温克族妇女普遍戴耳环、手镯、戒指，或镶饰珊瑚、玛瑙。已婚妇女还要戴上套筒、银牌、银圈等。
+			</p>
+		</li>
+		<li>			
+			<p><strong>高山族</strong><br />
+				台湾高山族传统服饰色彩鲜艳，以红、黄、黑三种颜色为主，其中男子的服装有腰裙、套裙、挑绣羽冠、长袍等，女子有短衣长裙、围裙、膝裤等，除服装外，还有许多饰物，如冠饰、臂饰、脚饰等，以鲜花制成花环，在盛装舞蹈时，直接戴在头上，非常漂亮。因为在台湾高山族看来，饰物不但美观，而且还是一种身份的象征，这也是我国古代百越族的传统，高山族在古代以裸为美。仅以幅布遮阴，毛皮围腰。但接触汉文化以后，逐步形成男穿长衫女着裙，讲究服饰美。衣服除兽皮、树皮外，多用自织麻布并加彩纹装饰。男子衣饰类型，北部常见无袖胴衣、披衣、胸衣、腰带；中部常	见鹿皮背心、胸袋、腰袋、胸衣、黑布裙；南部常见对襟长袖上衣、腰裙、套裤、黑头巾等。女子衣饰类型包括短衣长裙和长衣短裳。雅美人服饰简单，男子以丁字布遮下身，上穿背心；女子通常上穿背心，下着筒裙，冬天以方布裹身。
+			</p>
+			<img src="Material/56 nation/14.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/15.jpg" align="left">
+			<p><strong>哈尼族</strong><br />
+				叶车是哈尼族的一个支系。叶车妇女头戴白尖帽，上身穿靛青色对开式短袖土布衣，无领无扣，由宽宽的五色腰带扎腰。布衣是一件一件地套着穿，少则七八件，多达十余件，里长外短可以看出衣服的件数。叶车人认为，衣服件数越多，服装越美，越能显示出家庭的富裕。她们下身穿黑色短裤，裤脚口打上适当的褶纹，褶纹数与上衣数大致相等。大腿以下全部裸露着。逢年过节，姑娘们手上还带银手镯，胸前挂银链，腰的两侧佩挂银片和银泡泡，走起路来铃铃作响，颇有风韵。
+			</p>
+		</li>
+		<li>		
+			<p><strong>哈萨克族</strong><br />
+				哈萨克族的是以草原游牧文化为特征的民族，服装便于骑乘，其民族服装多用羊皮、狐狸皮、鹿皮、狼皮等制作，反映着山地草原民族的生活特点。 哈萨克族女子的服饰，多姿多彩。她们喜用白、红、绿、淡蓝色的绸缎、花布、毛纺织品等为原料制作连衣裙，年轻姑娘和少妇一般穿袖上有绣花，下摆有多层荷叶边的连衣裙。夏季套穿坎肩或短上衣，冬季外罩棉衣，外出时穿棉大衣。女子最讲究帽子和头巾。未出嫁的姑娘戴夏天扎一条漂亮的三角形或方形头巾，冬天戴一种绒布的硬壳圆顶帽，帽顶饰有猫头鹰羽毛，象征勇敢、坚定。当新娘时，戴一尖顶帽，上有绣花与金银珠宝装饰，前方还饰有串珠垂吊在脸前，一年后换戴花头巾，有孩子后开始戴披巾。
+			</p>
+			<img src="Material/56 nation/16.jpg" align="right">
+		</li>
+	</ul>
+
+	<ul id="div9_plus_ul5">
+		<li>
+			<img src="Material/56 nation/17.jpg" align="left">
+			<p><strong>京族</strong><br />
+				京族男子一般都穿及膝长衣，坦胸束腰，衣袖较窄。妇女则内挂菱形遮胸布，外穿无领、对襟短上衣，衣身较紧，衣袖很窄，下着宽腿长裤，多为黑色或褐色。外出时，外套淡色旗袍式长外衣。妇女喜欢染黑齿、结"砧板髻"。京族最有特色的装饰是他们的斗笠。
+			</p>
+		</li>
+		<li>			
+			<p><strong>景颇族</strong><br />
+				景颇族男子喜欢穿白色或黑色对襟园领上衣，包头布上缀有花边图案和彩色小绒珠，外出时常佩带腰刀和筒帕。妇女穿黑色对襟，下着黑、红色织成的统裙，腿上带裹腿。盛装时的妇女上衣前后及肩上都缀有许多银泡泡、银片，颈上挂七个银项圈或一串银链子或银铃，耳朵上戴比手指还长的银耳筒，手上戴一对或两对粗大刻花的银手镯。妇女戴银手饰越多表示越能干，越富有。有的妇女还爱好用藤蔑编成藤圈,涂有红漆、黑漆，围在腰部，并认为藤圈越多越美。
+			</p>
+			<img src="Material/56 nation/18.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/19.jpg" align="left">
+			<p><strong>柯尔克孜族</strong><br />
+				服装的形式，男子上身穿白色绣花边的圆领衬衫，外套羊皮或黑、蓝色棉布无领长“袷袢”，也有用驼毛织成的，袖口黑布沿边。系皮腰带，带上拴小刀、打火石等物。女穿对襟上衣，宽大无领，长不过膝，缀银中，多褶的长裙下端镶皮毛。也有穿连衣裙者，裙子下端带雏裥，外套黑色坎肩或“袷袢”
+			</p>
+		</li>
+		<li>			
+			<p><strong>黎族</strong><br />
+				黎族所生产的棉织工艺品驰名中外。尤其是“双面绣”最为出色，多作为上衣的装饰，如衣侧花，后背花等。黎族服饰图案的取材，多采用平日喜闻乐见的人物纹、动物纹，植物纹以及几何纹等。但不同地区有所侧重。这些图案的造型稚拙夸张，构思大胆巧妙，运用直线、平行线、方形、三角形等构成整齐的富有装饰风格的花纹图案。在色彩上，一般采用红、黄、白等几种，配色和谐，绚丽华美。黎族妇女的头巾，上衣，筒裙往往嵌入了金银箔，云母片、明片或羽毛，也有缀以贝壳、穿珠、铜钱、铜铃或流苏等，更产生了有声有色的特殊效
+			</p>
+			<img src="Material/56 nation/20.jpg" align="right">
+		</li>
+	</ul>
+
+	<ul id="div9_plus_ul6">
+		<li>
+			<img src="Material/56 nation/21.jpg" align="left">
+			<p><strong>傈僳族</strong><br />
+				傈僳族男女老幼都喜欢穿民族服装。各地服饰大同小异。根据服饰的颜色分为黑傈僳、白傈僳、花傈僳。聚居在怒江一带的白、黑傈僳族妇女，普遍穿右衽上衣，麻布长裙；已婚妇女戴大铜环，长可垂肩，头上以珊瑚、料珠为饰。年轻的姑娘喜欢用缀有小白贝的红线系辫；有些妇女还喜欢在胸前佩一串玛瑙、海贝或银币，并在海贝上刻有简单的横竖纹或小圆孔。一些贵重的胸饰可值一二头黄牛。永胜、腾冲一带的“花傈僳”，服饰较为艳丽美观，妇女均喜欢在上衣及长裙上镶绣许多花边，头缠花布头巾，耳坠大铜环或银环，裙长及地，行走时长裙摇曳摆动，显得婀娜富丽。各地傈僳族男女服饰都是麻布长衫或短衫，裤长及膝，膝下套“吊筒”。有的以青布包头，有的喜畜发辫于大脑后。一些富裕家的男子，左耳戴一串大红珊瑚，以示在社会上享有荣誉和尊严。	
+
+			</p>
+		</li>
+		<li>			
+			<p><strong>满族</strong><br />
+				本世纪30年代，满族男女都穿直统式的宽襟大袖长袍。女性旗袍下摆至（左骨右干）（小腿），有绣花卉纹饰。男性旗袍下摆及踝，无纹饰。40年代后，受国内外新式服饰新潮的冲击，满族男性旗袍已废弃，女性旗袍由宽袖变窄袖，直筒变紧身贴腰，臀部略大，下摆回收，长及踝。逐渐形成今日各色各样讲究色彩装饰和人体线条美的旗袍样式。
+			</p>
+			<img src="Material/56 nation/22.jpg" align="right">
+		</li>
+		<li>
+			<img src="Material/56 nation/23.jpg" align="left">
+			<p><strong>毛南族</strong><br />
+				毛南族妇女多穿青色或蓝色右襟上衣，配上银饰手镯，蓝白相衬。男子则穿唐装或琵琶上衣。
+			</p>
+		</li>
+		<li>			
+			<p><strong>门巴族</strong><br />
+				门隅一带男子喜戴一种叫“八拉嘎”的帽子，用蓝色或黑色氆氇作帽顶，下部使用红色氆氇，翻檐处用桔黄色绒布镶边，并留一个缺口，戴帽时把缺口对在右眼上方。门隅男子多穿赭色布袍或氆氇袍，但比藏族的袍子要短小一些。人们爱穿软底长筒靴，用红、黑两种色的氆氇镶配缝制。墨脱的男子很少戴帽子，常戴自编的斗笠防日晒雨林。穿的多是用棉麻自织的白色衣袍，赤足，腰悬砍刀或叶形小刀。门隅的妇女也是穿袍服，外边围一块白色氆氇围裙。勒布、邦金一带的妇女，习惯在背上披一张羊皮或牛犊皮。妇女颈上都悬挂着用松耳石、红珊瑚、玛瑙等串成的装饰品。她们穿的内衣叫“不布热”，颜色多样，无开襟、无领、无扣子，只开一个圆口由头上套穿。外衣称“冬固”，分长短两种，用红、黑氆氇做成。。不论男女，都系一条长2米，宽约6米的红氆氇腰带。墨脱一带由于气候温暖，妇女都喜欢穿色白质薄的小上衣或无袖无领的褂子，下着花色裙子，配上项链、耳环。
+			</p>
+			<img src="Material/56 nation/24.jpg" align="right">
+		</li>
+	</ul>
+	<p id="div9_first_page">首页</p>
+	<p id="div9_last_page">上一页</p>
+	<p id="div9_next_page">下一页</p>
+	<p id="div9_end_page">末页</p>
+	<p id="div9_close_info">合上</p>
+</div>
+<div id="copyright">Copyright&copy 2017 by <span>Yory<span> and <span>小腊肉</span></div>
+</body>
+</html>
